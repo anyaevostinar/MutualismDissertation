@@ -1,0 +1,21 @@
+set description mutualism_merit
+set email anyaejo@msu.edu
+set freq_email Job
+#set priority 3
+#set class_pref 6,7
+#set max_cpus 50
+set config_dir config
+
+set class_pref 95
+set walltime 60
+set mem_request 3
+set ppn 1
+
+
+#51..60 infection_mechanism2 avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 2
+
+#51..60 env_nomax avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment_nomax.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 2
+
+51..60 additive avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment_add.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 2 -set PARASITE_SKIP_REACTIONS 0
+
+51..60 mult avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment_mult.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 2 -set PARASITE_SKIP_REACTIONS 0

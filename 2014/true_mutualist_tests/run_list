@@ -1,0 +1,22 @@
+set description mutualism_basic
+set email anyaejo@msu.edu
+set email_when final
+#set priority 3
+#set class_pref 6,7
+#set max_cpus 50
+set config_dir config
+set dest_dir /mnt/home/anyaejo/Mutualism/true_mutualist_tests
+
+set class_pref 150
+set walltime 40
+set mem_request 3
+set beacon_priority n
+
+
+#51..60 super_easy85 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment_paraonly.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 0 -set VIRULENCE_SOURCE 2
+
+#51..60 super_easy50 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment_paraonly.cfg -set PARASITE_VIRULENCE 0.5 -set INFECTION_MECHANISM 0 -set VIRULENCE_SOURCE 2
+
+#51..60 parasitetasks_vertical50 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment_paraonly.cfg -set PARASITE_VIRULENCE 0.5 -set INFECTION_MECHANISM 0 -set VIRULENCE_SOURCE 2 -set INJECT_METHOD 0
+
+51..60 basic80 ./avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.8 -set INFECTION_MECHANISM 0 -set VIRULENCE_SOURCE 2 -set PARASITE_SKIP_REACTIONS 0 -set INJECT_METHOD 0

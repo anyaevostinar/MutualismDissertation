@@ -1,0 +1,6 @@
+initial_tests - just trying tweeking things but nothing worked out well, too short?
+long_tests - trying running things to 100,000 updates and then changing to infection method 2 
+no_trans_tests - the vertical trans treatment seems to be where things go bad so removing Inject_method 2 setting to see what happens
+infect0_tests - trying to let parasites and hosts evolve but with infection mechanism 0 and parasite reactions being counted so that parasites can evolve to be more or less helpful
+infect2_tests - trying infection mechanism 2 again but with probability of infecting without matching so that parasites survive
+merit_tests - shouldn't use default success, luis thinks adding merit back on and removing max reaction count with parasite reactions and infect2 should work so trying those

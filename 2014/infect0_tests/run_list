@@ -1,0 +1,23 @@
+set description mutualism_infect0-cost
+set email anyaejo@msu.edu
+set freq_email Job
+#set priority 3
+#set class_pref 6,7
+#set max_cpus 50
+set config_dir config
+
+set class_pref 95
+set walltime 60
+set mem_request 3
+set ppn 1
+
+
+#51..60 infection_mechanism0 avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 0
+
+#51..60 env_nomax avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment_nomax.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 0
+
+#51..60 parasite_rewards avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 0 -set PARASITE_SKIP_REACTIONS 0
+
+#51..60 virulence_evolve avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg  -set INFECTION_MECHANISM 0 -set VIRULENCE_SOURCE 1
+
+51..60 divide-cost avida -s $seed -set EVENT_FILE events-long.cfg -set INST_SET instset-transsmt-cost.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 0

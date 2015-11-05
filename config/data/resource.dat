@@ -1,0 +1,20 @@
+# Avida resource data
+# Wed Jun  4 14:55:12 2014
+# First column gives the current update, all further columns give the quantity
+# of the particular resource at that update.
+#  1: Update
+#  2: resECHO
+
+0 118.63 
+100 1186.33 
+200 1182.94 
+300 1186.26 
+400 1176.97 
+500 1186.02 
+600 1163.14 
+700 449.125 
+800 1142.76 
+900 263.621 
+1000 1013.48 
+1100 695.075 
+1200 1.89089 

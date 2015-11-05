@@ -1,0 +1,21 @@
+# Fri Aug 15 13:35:00 2014
+#  1: Update
+#  2: Unique Phenotypes (by task done)
+#  3: Shannon Diversity of Phenotypes (by task done)
+#  4: Unique Phenotypes (by task count)
+#  5: Average Phenotype Shannon Diversity (by task count)
+#  6: Average Task Diversity (number of different tasks)
+
+0 1 0 1 0 0 
+100 1 0 1 0 0 
+200 1 0 1 0 0 
+300 1 0 1 0 0 
+400 1 0 1 0 0 
+500 1 0 1 0 0 
+600 1 0 1 0 0 
+700 1 0 1 0 0 
+800 1 0 1 0 0 
+900 1 0 1 0 0 
+1000 1 0 1 0 0 
+1100 2 0.257544 2 0 0.0433718 
+1200 3 0.483557 5 0.000889304 0.103155 

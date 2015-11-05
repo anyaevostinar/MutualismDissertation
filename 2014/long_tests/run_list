@@ -1,0 +1,37 @@
+set description mutualism_long2
+set email anyaejo@msu.edu
+set freq_email Job
+#set priority 3
+#set class_pref 6,7
+#set max_cpus 50
+set config_dir config
+
+set class_pref 95
+set walltime 120
+set mem_request 3
+set ppn 1
+
+
+#51..60 default avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85
+
+#51..60 infection_mechanism0 avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 0
+
+#51..60 vertical_trans avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 0 -set INJECT_METHOD 0
+
+#51..60 parasite_rewards avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 0 -set INJECT_METHOD 0 -set PARASITE_SKIP_REACTIONS 0
+
+#51..60 mutualism_control avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.75 -set INFECTION_MECHANISM 0 -set PARASITE_SKIP_REACTIONS 0 -set INJECT_METHOD 0
+
+#51..60 mutualism_thread_control avida -s $seed -set EVENT_FILE events.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.75 -set INFECTION_MECHANISM 0 -set PARASITE_SKIP_REACTIONS 0 -set INJECT_METHOD 0 -set THREAD_SLICING_METHOD 1
+
+#51..60 default_long avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85
+
+51..60 infection_mechanism2_long avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 2
+
+51..60 vertical_trans_long_2 avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 2 -set INJECT_METHOD 2
+
+51..60 parasite_rewards_long_2 avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.85 -set INFECTION_MECHANISM 2 -set INJECT_METHOD 2 -set PARASITE_SKIP_REACTIONS 0
+
+51..60 mutualism_control_long_2 avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.75 -set INFECTION_MECHANISM 2 -set PARASITE_SKIP_REACTIONS 0 -set INJECT_METHOD 2
+
+51..60 mutualism_thread_control_long_2 avida -s $seed -set EVENT_FILE events-long.cfg -def INST_SET instset-transsmt.cfg -set ENVIRONMENT_FILE environment.cfg -set PARASITE_VIRULENCE 0.75 -set INFECTION_MECHANISM 2 -set PARASITE_SKIP_REACTIONS 0 -set INJECT_METHOD 2 -set THREAD_SLICING_METHOD 1
